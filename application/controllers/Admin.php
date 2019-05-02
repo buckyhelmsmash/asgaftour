@@ -119,6 +119,24 @@ class Admin extends CI_Controller
         $this->load->view('admin/index', $data);
     }
 
+    public function listnegara()
+    {
+        $data['admin'] = $this->db->get_where('admin', ['username' =>
+        $this->session->userdata('username')])->row_array();
+
+        // echo 'Welcome ' . $data['admin']['nama'];
+        $this->load->view('admin/listnegara', $data);
+    }
+
+    public function detailnegara()
+    {
+        $data['admin'] = $this->db->get_where('admin', ['username' =>
+        $this->session->userdata('username')])->row_array();
+
+        // echo 'Welcome ' . $data['admin']['nama'];
+        $this->load->view('admin/detailnegara', $data);
+    }
+
     public function pegawai()
     {
         $data['admin'] = $this->db->get_where('admin', ['username' =>
