@@ -21,10 +21,11 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                             </div>
-                            <form class="user" method="post" action="<?= base_url('admin/register') ?>">
+                            <?= $this->session->flashdata('message'); ?>
+                            <form class="user" method="post" action="<?= base_url('admin/register?email=' . $email) ?>" id="form-register">
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="nama" name="nama" placeholder="Nama..." value="<?= set_value('nama'); ?>">
+                                    <input type="text" class="form-control form-control-user" id="nama" name="nama" value="<?= set_value('nama', $nama); ?>" readonly>
                                     <?= form_error('nama', '<small class="text-danger pl-3">', '</small>'); ?>
                                 </div>
                                 <div class="form-group">
@@ -32,7 +33,7 @@
                                     <?= form_error('username', '<small class="text-danger pl-3">', '</small>'); ?>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email Address" value="<?= set_value('email'); ?>">
+                                    <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Email Address" value="<?= set_value('email', $email); ?>" readonly>
                                     <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
                                 </div>
                                 <div class="form-group row">
@@ -59,5 +60,6 @@
         ?>
 
 </body>
+
 
 </html>
