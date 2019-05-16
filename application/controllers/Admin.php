@@ -9,6 +9,9 @@ class Admin extends CI_Controller
         parent::__construct();
         $this->load->library('form_validation');
         $this->load->model("pegawai_model");
+        $this->load->model("negara_model");
+        $this->load->model("destinasi_model");
+        $this->load->model("hotel_model");
     }
 
     public function index()
@@ -124,17 +127,40 @@ class Admin extends CI_Controller
         $data['admin'] = $this->db->get_where('admin', ['username' =>
         $this->session->userdata('username')])->row_array();
 
-        // echo 'Welcome ' . $data['admin']['nama'];
+        $data["list_negara"] = $this->negara_model->getAll();
         $this->load->view('admin/listnegara', $data);
     }
 
-    public function detailnegara()
+    public function negara($id = null)
+    {
+        $data['admin'] = $this->db->get_where('admin', ['username' =>
+        $this->session->userdata('username')])->row_array();
+        $data["detail_negara"] = $this->negara_model->getByid($id);
+        // var_dump($data);
+        $data["destinasi"] = $this->destinasi_model->getByidnegara($id);
+        $data["hotel"] = $this->hotel_model->getByidnegara($id);
+        // var_dump($asd);
+        // die;
+        $this->load->view('admin/detailnegara', $data);
+    }
+    public function tambahnegara()
     {
         $data['admin'] = $this->db->get_where('admin', ['username' =>
         $this->session->userdata('username')])->row_array();
 
-        // echo 'Welcome ' . $data['admin']['nama'];
-        $this->load->view('admin/detailnegara', $data);
+        $this->form_validation->set_rules('nama_negara', 'Nama Negara', 'required|trim');
+        $this->form_validation->set_rules('gambar_negara', 'Gambar Negara', 'required');
+        if ($this->form_validation->run() == false) {
+            $data['title'] = 'Login Admin';
+            $this->load->view('admin/addnegara', $data);
+        } else {
+            // $negara->save();
+            $this->negara_model->save();
+            $this->session->set_flashdata('success', 'Berhasil disimpan');
+        }
+
+
+        $this->load->view('admin/addnegara', $data);
     }
 
     public function pegawai()
@@ -201,5 +227,27 @@ class Admin extends CI_Controller
         }
 
         echo json_encode($data);
+    }
+    public function addwisata($id_negara)
+    {
+        $input = [
+            'id_negara' => $id_negara,
+            'nama_destinasi' => $this->input->post('nama_destinasi'),
+            'gambar_destinasi' => 'default.jpg',
+            'deskripsi' => $this->input->post('deskripsi')
+        ];
+        $this->db->insert('destinasi_tujuan', $input);
+        redirect('admin/negara/' . $id_negara);
+    }
+    public function addhotel($id_negara)
+    {
+        $input = [
+            'id_negara' => $id_negara,
+            'nama_hotel' => $this->input->post('nama_hotel'),
+            // 'gambar_destinasi' => 'default.jpg',
+            // 'deskripsi' => $this->input->post('deskripsi')
+        ];
+        $this->db->insert('hotel', $input);
+        redirect('admin/negara/' . $id_negara);
     }
 }

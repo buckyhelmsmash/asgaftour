@@ -14,7 +14,7 @@
 
     <!-- Heading -->
     <div class="sidebar-heading">
-    Menu
+        Menu
     </div>
 
     <!-- Nav Item - Dashboard -->
@@ -35,24 +35,24 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Option:</h6>
                 <button class="btn btn-sm collapse-item" type="button" onclick="location.href='<?= base_url('admin/listnegara'); ?>'">List Negara</button>
-                <button class="btn btn-sm collapse-item" type="button" href="<?= base_url('admin/addnegara'); ?>">Tambah Negara</button>
+                <button class="btn btn-sm collapse-item" type="button" onclick="location.href='<?= base_url('admin/tambahnegara'); ?>'">Tambah Negara</button>
             </div>
         </div>
     </div>
 
     <!-- Nav Item - Paket -->
     <li class="nav-item">
-    <button class="btn bg-primary nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-        <i class="fas fa-fw fa-suitcase"></i>
-        <span>Paket</span>
-    </button>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-        <h6 class="collapse-header">Option:</h6>
-        <button class="btn btn-sm collapse-item" type="button" href="<?= base_url('admin/paket'); ?>">List Paket</button>
-        <button class="btn btn-sm collapse-item" type="button" href="<?= base_url('admin/tambahpaket'); ?>">Tambah Paket</button>
+        <button class="btn bg-primary nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-suitcase"></i>
+            <span>Paket</span>
+        </button>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Option:</h6>
+                <button class="btn btn-sm collapse-item" type="button" href="<?= base_url('admin/paket'); ?>">List Paket</button>
+                <button class="btn btn-sm collapse-item" type="button" href="<?= base_url('admin/tambahpaket'); ?>">Tambah Paket</button>
+            </div>
         </div>
-    </div>
     </li>
 
     <!-- Nav Item - Pegawai -->
