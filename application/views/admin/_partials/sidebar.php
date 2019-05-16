@@ -34,7 +34,7 @@
         <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Option:</h6>
-                <button class="btn btn-sm collapse-item" type="button" onclick="location.href='<?= base_url('admin/listnegara'); ?>'">List Negara</button>
+                <button class="btn btn-sm collapse-item" type="button" onclick="location.href='<?= base_url('admin/negara'); ?>'">List Negara</button>
                 <button class="btn btn-sm collapse-item" type="button" onclick="location.href='<?= base_url('admin/tambahnegara'); ?>'">Tambah Negara</button>
             </div>
         </div>
@@ -49,8 +49,8 @@
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Option:</h6>
-                <button class="btn btn-sm collapse-item" type="button" href="<?= base_url('admin/paket'); ?>">List Paket</button>
-                <button class="btn btn-sm collapse-item" type="button" href="<?= base_url('admin/tambahpaket'); ?>">Tambah Paket</button>
+                <button class="btn btn-sm collapse-item" type="button" onclick="location.href='<?= base_url('admin/listpaket'); ?>'">List Paket</button>
+                <button class="btn btn-sm collapse-item" type="button" onclick="location.href='<?= base_url('admin/tambahpaket'); ?>'">Tambah Paket</button>
             </div>
         </div>
     </li>

@@ -111,19 +111,7 @@
                     Sholat di Masjid Sultan
                     Foto Foto di Merlion Park, foto bersama patung Merlion
                     Jalan-jalan di Helix bridge (dekat Marina Bay Sands)
-                    Malam harinya ke Marina Bay Sands mall untuk lihat air mancur Spectra spectacular
-                    Itinerary Hari 2
-
-                    Pergi melihat Chinese Garden atau Botanic Garden
-                    Makan siang di Orchard Road
-                    Sore hari bisa bersantai jalan jalan di mall Takashimaya, Ion Orchard, Lucky Plaza
-                    Malam hari menikmati pemandangan sungai di Clarke Quay.
-                    Itinerary hari 3 
-
-                    Berbelanja di Chinatown
-                    Pergi ke temple Buddha Tooth Relic Museum
-                    Sholat di masjid Chulia di jalan Mosque
-                    Pergi Ke Mustafa Center.</p>
+                    Malam harinya ke Marina Bay Sands mall untuk lihat air mancur Spectra spectacular.</p>
           </div>  
           <div class="card-footer">
             <a href="<?= base_url('tour/singapore'); ?>" class="btn btn-info">Lihat Detail</a>
@@ -137,7 +125,12 @@
             <h4 class="card-title">
               <a href="#" class="text-info">Trip To Bangkok 3D2N</a>
             </h4>
-            <p class="card-text">Penjelasan</p>
+            <p class="card-text">Itinerary Hari 1
+
+              Pergi melihat Chinese Garden.
+              Makan siang di Wat Arum
+              Explore Wat Arum
+              City Tour Bangkok.</p>
           </div>
           <div class="card-footer">
               <a href="#" class="btn btn-info">Lihat Detail</a>
@@ -151,7 +144,12 @@
             <h4 class="card-title">
               <a href="#" class="text-info">Trip To Singapore 4D3N</a>
             </h4>
-            <p class="card-text">Penjelasan</p>
+            <p class="card-text">Itinerary hari 1 
+
+              Berbelanja di Chinatown
+              Pergi ke temple Buddha Tooth Relic Museum
+              Sholat di masjid Chulia di jalan Mosque
+              Pergi Ke Mustafa Center</p>
           </div>
           <div class="card-footer">
               <a href="<?= base_url('tour/singapore'); ?>" class="btn btn-info">Lihat Detail</a>
@@ -165,7 +163,12 @@
             <h4 class="card-title">
               <a href="#" class="text-info">Trip To Kuala Lumpur 4D3N</a>
             </h4>
-            <p class="card-text">Penjelasan</p>
+            <p class="card-text">Itinerary hari 1 
+              Twin Tower
+              Dataran Merdeka
+              Istana Negara
+              Pindah ke Malaka
+            </p>
           </div>
           <div class="card-footer">
               <a href="#" class="btn btn-info">Lihat Detail</a>
@@ -179,7 +182,14 @@
             <h4 class="card-title">
               <a href="#" class="text-info">Backpacking To Singapore</a>
             </h4>
-            <p class="card-text">Penjelasan</p>
+            <p class="card-text">Itinerary hari 1 
+
+              Makan Siang di Bugis Street
+              Window shopping di Bugis Street dan mall Bugis Junction
+              Sholat di Masjid Sultan
+              Foto Foto di Merlion Park, foto bersama patung Merlion
+              Jalan-jalan di Helix bridge (dekat Marina Bay Sands)
+              Malam harinya ke Marina Bay Sands mall untuk lihat air mancur Spectra spectacular.</p>
           </div>
           <div class="card-footer">
               <a href="#" class="btn btn-info">Lihat Detail</a>
@@ -194,7 +204,10 @@
               <h4 class="card-title">
                 <a href="#" class="text-info">Trip To Bangkok 5D4N</a>
               </h4>
-              <p class="card-text">Penjelasan</p>
+              <p class="card-text">Pergi melihat Chinese Garden.
+              Makan siang di Wat Arum
+              Explore Wat Arum
+              City Tour Bangkok.</p>
             </div>
             <div class="card-footer">
                 <a href="#" class="btn btn-info">Lihat Detail</a>

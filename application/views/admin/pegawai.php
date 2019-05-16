@@ -122,7 +122,7 @@
                 </button>
             </div>
             <div class="modal-body mx-3">
-                <form action="<?= base_url('admin/addpegawai'); ?>" method="post" id="form-pegawai">
+                <form action="<?= base_url('admin/pegawai/add'); ?>" method="post" id="form-pegawai">
                     <div id="the-message"></div>
                     <!-- Text input-->
                     <div class="form-group">

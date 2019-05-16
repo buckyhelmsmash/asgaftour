@@ -24,18 +24,26 @@
                 <div class="container-fluid">
                     <div class="card shadow mb-4">
                         <div class="card-body">
-                            <form class="form-horizontal" method="post" action="<?= base_url('admin/negara/add') ?>">
+                            <form class="form-horizontal" method="post" action="<?= base_url('admin/tambahnegara') ?>">
                                 <fieldset>
 
                                     <!-- Form Name -->
-                                    <legend>Input Negara</legend>
+                                    <legend>Input Paket</legend>
 
                                     <!-- Text input-->
                                     <div class="form-group">
-                                        <label class="col-md-4 control-label" for="negara">Negara</label>
+                                        <label class="col-md-4 control-label" for="negara">Judul</label>
                                         <div class="col-md-4">
                                             <input id="nama_negara" name="nama_negara" type="text" placeholder="" class="form-control input-md">
                                             <?= form_error('nama_negara', '<small class="text-danger pl-3">', '</small>'); ?>
+                                        </div>
+                                    </div>
+
+                                    <!-- deskripsi paket -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="deskripsi">Deskripsi Paket</label>
+                                        <div class="col-md-4">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                         </div>
                                     </div>
 
